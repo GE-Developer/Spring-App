@@ -39,8 +39,8 @@
                                 <rect key="frame" x="60" y="144" width="308" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0z-zs-SiS">
-                                        <rect key="frame" x="30" y="8" width="270" height="134"/>
-                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="22"/>
+                                        <rect key="frame" x="8" y="12" width="292" height="130"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -49,8 +49,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="HmH-KM-JEv"/>
                                     <constraint firstAttribute="bottom" secondItem="L0z-zs-SiS" secondAttribute="bottom" constant="8" id="QrC-PT-xRc"/>
-                                    <constraint firstItem="L0z-zs-SiS" firstAttribute="top" secondItem="JtV-4c-T27" secondAttribute="top" constant="8" id="Zkp-CA-wkU"/>
-                                    <constraint firstItem="L0z-zs-SiS" firstAttribute="leading" secondItem="JtV-4c-T27" secondAttribute="leading" constant="30" id="dsu-Yq-c8i"/>
+                                    <constraint firstItem="L0z-zs-SiS" firstAttribute="top" secondItem="JtV-4c-T27" secondAttribute="top" constant="12" id="Zkp-CA-wkU"/>
+                                    <constraint firstItem="L0z-zs-SiS" firstAttribute="leading" secondItem="JtV-4c-T27" secondAttribute="leading" constant="8" id="dsu-Yq-c8i"/>
                                     <constraint firstAttribute="trailing" secondItem="L0z-zs-SiS" secondAttribute="trailing" constant="8" id="yG5-8f-ynL"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
