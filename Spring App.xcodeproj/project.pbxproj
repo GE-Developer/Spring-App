@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		700DD2E31713E67BB0ACCB93 /* Pods_Spring_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8FF0323043B848722854BD /* Pods_Spring_App.framework */; };
+		EE2DFC6B2638C90700D9D334 /* SpringDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DFC6A2638C90700D9D334 /* SpringDescription.swift */; };
+		EE2DFC6F2638D13600D9D334 /* AnimationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DFC6E2638D13600D9D334 /* AnimationData.swift */; };
 		EEFF40192637789900FE7F1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFF40182637789900FE7F1D /* AppDelegate.swift */; };
 		EEFF401B2637789900FE7F1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFF401A2637789900FE7F1D /* SceneDelegate.swift */; };
 		EEFF401D2637789900FE7F1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFF401C2637789900FE7F1D /* ViewController.swift */; };
@@ -16,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C4489A394DDCA522D7A97BA /* Pods-Spring App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spring App.debug.xcconfig"; path = "Target Support Files/Pods-Spring App/Pods-Spring App.debug.xcconfig"; sourceTree = "<group>"; };
+		9758735E4127B75F3453859E /* Pods-Spring App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spring App.release.xcconfig"; path = "Target Support Files/Pods-Spring App/Pods-Spring App.release.xcconfig"; sourceTree = "<group>"; };
+		DB8FF0323043B848722854BD /* Pods_Spring_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spring_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2DFC6A2638C90700D9D334 /* SpringDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringDescription.swift; sourceTree = "<group>"; };
+		EE2DFC6E2638D13600D9D334 /* AnimationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationData.swift; sourceTree = "<group>"; };
 		EEFF40152637789900FE7F1D /* Spring App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spring App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEFF40182637789900FE7F1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEFF401A2637789900FE7F1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +39,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				700DD2E31713E67BB0ACCB93 /* Pods_Spring_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03FE957BC3472DF4E039642D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB8FF0323043B848722854BD /* Pods_Spring_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1EF6F179C3F1D0BD51867816 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C4489A394DDCA522D7A97BA /* Pods-Spring App.debug.xcconfig */,
+				9758735E4127B75F3453859E /* Pods-Spring App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE2DFC692638C8E700D9D334 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DFC6A2638C90700D9D334 /* SpringDescription.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE2DFC6D2638D10000D9D334 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DFC6E2638D13600D9D334 /* AnimationData.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		EEFF400C2637789900FE7F1D = {
 			isa = PBXGroup;
 			children = (
 				EEFF40172637789900FE7F1D /* Spring App */,
 				EEFF40162637789900FE7F1D /* Products */,
+				1EF6F179C3F1D0BD51867816 /* Pods */,
+				03FE957BC3472DF4E039642D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +100,49 @@
 		EEFF40172637789900FE7F1D /* Spring App */ = {
 			isa = PBXGroup;
 			children = (
-				EEFF40182637789900FE7F1D /* AppDelegate.swift */,
-				EEFF401A2637789900FE7F1D /* SceneDelegate.swift */,
-				EEFF401C2637789900FE7F1D /* ViewController.swift */,
-				EEFF401E2637789900FE7F1D /* Main.storyboard */,
-				EEFF40212637789C00FE7F1D /* Assets.xcassets */,
-				EEFF40232637789C00FE7F1D /* LaunchScreen.storyboard */,
-				EEFF40262637789C00FE7F1D /* Info.plist */,
+				EE2DFC6D2638D10000D9D334 /* Services */,
+				EE2DFC692638C8E700D9D334 /* Models */,
+				EEFF403126377C6C00FE7F1D /* Supports */,
+				EEFF402F26377C4400FE7F1D /* View Controllers */,
+				EEFF402E26377C3200FE7F1D /* Storyboards */,
+				EEFF403026377C5800FE7F1D /* Resourses */,
 			);
 			path = "Spring App";
+			sourceTree = "<group>";
+		};
+		EEFF402E26377C3200FE7F1D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EEFF401E2637789900FE7F1D /* Main.storyboard */,
+				EEFF40232637789C00FE7F1D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EEFF402F26377C4400FE7F1D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEFF401C2637789900FE7F1D /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EEFF403026377C5800FE7F1D /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				EEFF40212637789C00FE7F1D /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		EEFF403126377C6C00FE7F1D /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				EEFF40182637789900FE7F1D /* AppDelegate.swift */,
+				EEFF401A2637789900FE7F1D /* SceneDelegate.swift */,
+				EEFF40262637789C00FE7F1D /* Info.plist */,
+			);
+			path = Supports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EEFF40292637789C00FE7F1D /* Build configuration list for PBXNativeTarget "Spring App" */;
 			buildPhases = (
+				62969ED9FC21777DF8E41FCE /* [CP] Check Pods Manifest.lock */,
 				EEFF40112637789900FE7F1D /* Sources */,
 				EEFF40122637789900FE7F1D /* Frameworks */,
 				EEFF40132637789900FE7F1D /* Resources */,
+				8D2BEAAAD8E25F01C0D25208 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +212,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		62969ED9FC21777DF8E41FCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spring App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D2BEAAAD8E25F01C0D25208 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spring App/Pods-Spring App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spring App/Pods-Spring App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spring App/Pods-Spring App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EEFF40112637789900FE7F1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +261,8 @@
 			files = (
 				EEFF401D2637789900FE7F1D /* ViewController.swift in Sources */,
 				EEFF40192637789900FE7F1D /* AppDelegate.swift in Sources */,
+				EE2DFC6F2638D13600D9D334 /* AnimationData.swift in Sources */,
+				EE2DFC6B2638C90700D9D334 /* SpringDescription.swift in Sources */,
 				EEFF401B2637789900FE7F1D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,11 +407,12 @@
 		};
 		EEFF402A2637789C00FE7F1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C4489A394DDCA522D7A97BA /* Pods-Spring App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Spring App/Info.plist";
+				INFOPLIST_FILE = "Spring App/Supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,17 +420,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "GE-Developer.Spring-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		EEFF402B2637789C00FE7F1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9758735E4127B75F3453859E /* Pods-Spring App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Spring App/Info.plist";
+				INFOPLIST_FILE = "Spring App/Supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "GE-Developer.Spring-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
